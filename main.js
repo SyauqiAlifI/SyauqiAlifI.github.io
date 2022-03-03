@@ -5,18 +5,30 @@
 const http = require('http');
 const fs = require('fs');
 
+function renderHTML(path, response) {
+    fs.readFile(path, null, function(error, data) {
+        if (error) {
+            response.writeHead(404);
+            response.write('File not found!');
+        } else {
+            response.write(data);
+        }
+        response.end();
+    });
+}
+
 // Create a server
 const server = http.createServer((req, res) => {
     // Make a route for the root path
     if (req.url === '/' || req.url === '/home') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.createReadStream(__dirname + './home.html').pipe(res);
+        renderHTML('./home.html', res);
     } else if (req.url === '/about') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.createReadStream(__dirname + './about.html').pipe(res);
+        renderHTML('./about.html', res);
     } else {
         res.writeHead(404, { 'Content-Type': 'text/html' });
-        fs.createReadStream(__dirname + './404.html').pipe(res);
+        renderHTML('./404.html', res);
     }
 }
 );
