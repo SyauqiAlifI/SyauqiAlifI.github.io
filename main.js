@@ -18,20 +18,21 @@ function renderHTML(path, response) {
 }
 
 // Create a server
-const server = http.createServer((req, res) => {
+http.createServer((req, res) => {
+
+    const url = req.url;
     // Make a route for the root path
-    if (req.url === '/' || req.url === '/home') {
+    if (url === '/' || url === '/home') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         renderHTML('./home.html', res);
+        res.end();
     } else if (req.url === '/about') {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         renderHTML('./about.html', res);
+        res.end();
     } else {
         res.writeHead(404, { 'Content-Type': 'text/html' });
         renderHTML('./404.html', res);
+        res.end();
     }
-}
-);
-
-// Listen on port 3000
-server.listen(3000);
+}).listen(3000);
