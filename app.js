@@ -20,17 +20,16 @@ http.createServer((req, res) => {
 	})
 	const url = req.url
 
-
 	switch(url) {
 		case '/about':
-			renderHTML('./html/about.html', res)
-			break
+			renderHTML('./html/about.html', res);
+			break;
 		case '/home':
-			renderHTML('./html/home.html', res)
-			break
+			renderHTML('./html/home.html', res);
+			break;
 		default:
-			renderHTML('./html/404.html', res)
-			break
+			renderHTML('./index.html', res);
+			break;
 	}
 
 }) .listen(port, () => {
