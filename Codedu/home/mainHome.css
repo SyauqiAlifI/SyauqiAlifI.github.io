@@ -1,14 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800);
-
-/* Main Container */
-#container {
-    width: 80%;
-    height: fit-content;
-    padding-top: 12%;
-    padding-bottom: 6%;
-    margin: auto;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -22,9 +11,9 @@ a {
     height: fit-content;
     display: inline-block;
 }
-
-span.yellow-text {
-    color: #FFC42D;
+#landing-page {
+    height: 100%;
+    padding: 15% 0;
 }
 
 /* Left Section */
@@ -64,4 +53,25 @@ span.yellow-text {
 #welcome-hero-image > img {
     max-width: 364px;
     max-height: 364px;
+}
+
+/* Why Choose Us */
+#box-cu {
+    background-color: #112D4E;
+    padding: 3% 0;
+}
+#cu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cu-text {
+    font-family: Montserrat;
+}
+.cu-content {
+    margin: 10% 0;
+    width: fit-content;
+}
+#chev-right {
+    background-image: url(../assets/vectors/chev_right.png);
 }

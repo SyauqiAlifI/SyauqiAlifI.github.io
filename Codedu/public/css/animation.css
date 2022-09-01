@@ -1,0 +1,14 @@
+.animate-in {
+    animation-name: animate-in;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes animate-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
