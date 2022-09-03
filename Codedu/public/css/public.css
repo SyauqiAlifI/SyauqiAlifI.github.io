@@ -34,3 +34,12 @@ span.yellow-text {
 .main-p {
     font-size: 20px;
 }
+.fa-brand {
+    font-family: FontAwesomeBrands;
+}
+.fa-reg {
+    font-family: FontAwesomeRegular;
+}
+.fa-solid {
+    font-family: FontAwesomeSolid;
+}

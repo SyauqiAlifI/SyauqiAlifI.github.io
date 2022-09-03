@@ -72,6 +72,49 @@ a {
     margin: 10% 0;
     width: fit-content;
 }
-#chev-right {
-    background-image: url(../assets/vectors/chev_right.png);
+a#a-button-cu {
+    text-align: center;
+}
+a#a-button-cu > span {
+    margin-left: 1em;
+    font-size: 18px;
+}
+
+/* Why Choose Us (Right) */
+#slideshow-container {
+    max-width: 460px;
+    min-width: 460px;
+    border-radius: 16px;
+    max-height: 85%;
+    box-shadow: 3px 6px 6px 1px rgba(255, 255, 255, 0.35);
+}
+#slideshow-indicator {
+    height: 10%;
+    margin: 2.5% 0;
+    text-align: center;
+}
+.slide-images {
+    display: none;
+}
+img.mslide {
+    max-width: 460px;
+    min-width: 460px;
+    max-height: 230px;
+    border-radius: 16px;
+    vertical-align: middle;
+}
+.s-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 .3em;
+    background-color: #9C9C9C;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.active-dot {
+    height: 12px !important;
+    width: 12px !important;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
 }

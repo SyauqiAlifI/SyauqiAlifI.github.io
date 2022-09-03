@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../public/css/public.css">
     <link rel="stylesheet" href="mainHome.css">
     <link rel="stylesheet" href="responsiveHome.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <title>CodEdu - Home</title>
 </head>
 
@@ -112,21 +113,37 @@
                 <p class="cu-content">
                     <a href="" id="a-button-cu" class="cu-text head-2" style="font-weight: 600;">
                         See all courses
-                        <div id="chev-right"></div>
+                        <span class="fa fa-chevron-circle-right bounce-right"></span>
                     </a>
                 </p>
             </div>
             <!-- Carousel -->
-            <div id="right-cu">
-
+            <div id="right-cu" class="white-text">
+                <div id="slideshow-container">
+                    <!-- Slideshow Images -->
+                    <div class="slide-images">
+                        <img class="mslide" src="../assets/images/HNAPA.jpeg" alt="image-slideshow">
+                    </div>
+                    <div class="slide-images">
+                        <img class="mslide" src="../assets/images/HNAPB.jpeg" alt="image-slideshow">
+                    </div>
+                    <div class="slide-images">
+                        <img class="mslide" src="../assets/images/HNAPC.jpeg" alt="image-slideshow">
+                    </div>
+                </div>
+                <div id="slideshow-indicator">
+                    <span class="s-dot"></span>
+                    <span class="s-dot"></span>
+                    <span class="s-dot"></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- END of Contents -->
+        <!-- END of Contents -->
 </body>
 
-<script src="home.js"></script>
+<script src="./home.js"></script>
+<script src="./slideshow.js"></script>
 <script src="../public/js/loadpage.js"></script>
 
 </html>

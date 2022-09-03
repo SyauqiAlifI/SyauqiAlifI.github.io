@@ -1,4 +1,5 @@
-window.onscroll = function () {fixnav()}
+// Navbar handler
+window.onscroll = function () {fixnav();}
 function fixnav() {
     let home_nav = document.getElementById('main-nav')
     if (document.documentElement.scrollTop > 1) {
