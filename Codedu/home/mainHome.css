@@ -99,14 +99,28 @@ a#a-button-cu > span {
 }
 .slide-images {
     display: none;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
 }
 img.mslide {
-    max-width: 460px;
-    min-width: 460px;
-    max-height: 230px;
+    max-width: 427px;
+    min-width: 427px;
+    max-height: 240px;
+    min-height: 240px;
     border-radius: 16px;
     object-fit: cover;
     vertical-align: middle;
+}
+.slide-images::before {
+    content: "";
+    position: absolute;
+    width: 213.5px;
+    height: 240px;
+    transform: skew(220deg) translateX(-45%);
+    z-index: 1;
+    right: 50%;
+    background-color: rgba(255, 255, 255, 0.50);
 }
 .s-dot {
     height: 10px;

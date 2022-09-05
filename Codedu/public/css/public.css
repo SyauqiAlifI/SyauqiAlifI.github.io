@@ -15,6 +15,10 @@
     height: fit-content;
     margin: auto;
 }
+.landing-page {
+    height: 100%;
+    padding: 15% 0;
+}
 
 /* Typography */
 .white-text {
