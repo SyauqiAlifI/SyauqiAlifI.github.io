@@ -10,6 +10,13 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-duration: 600ms;
+}
 @keyframes animate-in {
     from {
         opacity: 0;
@@ -23,9 +30,17 @@
         transform: translateX(0);
     }
     50% {
-        transform: translateX(8px);
+        transform: translateX(12px);
     }
     100% {
         transform: translateX(0);
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

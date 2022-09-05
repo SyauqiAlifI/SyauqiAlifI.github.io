@@ -1,6 +1,7 @@
 // Slideshow for "Why Choose Us"
 let slideIndex = 0 // Index for the active images
 slideShow()
+
 function slideShow() {
     // Define variables
     let slides = document.getElementsByClassName("slide-images") // The Images
@@ -24,8 +25,12 @@ function slideShow() {
     }
 
     // Minus-ed 1 because the slide index from 0
-    slides[slideIndex-1].style.display = "block"
-    indicators[slideIndex-1].className += " active-dot"
+    slides[slideIndex - 1].style.display = "block"
+    slides[slideIndex - 1].className += " fade-in"
+    setTimeout(() => {
+        slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" fade-in", "")
+    }, 1000)
+    indicators[slideIndex - 1].className += " active-dot"
 
-    setTimeout(slideShow, 6000)
+    setTimeout(slideShow, 8000)
 }

@@ -76,17 +76,21 @@ a#a-button-cu {
     text-align: center;
 }
 a#a-button-cu > span {
-    margin-left: 1em;
+    margin-left: .8em;
     font-size: 18px;
 }
 
 /* Why Choose Us (Right) */
+#right-cu {
+    box-sizing: border-box;
+}
+#the-show {
+    display: inline-block;
+}
 #slideshow-container {
-    max-width: 460px;
-    min-width: 460px;
     border-radius: 16px;
-    max-height: 85%;
-    box-shadow: 3px 6px 6px 1px rgba(255, 255, 255, 0.35);
+    /* max-height: 85%; */
+    box-shadow: 3px 6px 6px 1px rgba(0, 0, 0, 0.35);
 }
 #slideshow-indicator {
     height: 10%;
@@ -101,6 +105,7 @@ img.mslide {
     min-width: 460px;
     max-height: 230px;
     border-radius: 16px;
+    object-fit: cover;
     vertical-align: middle;
 }
 .s-dot {
