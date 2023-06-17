@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- My icon -->
-  <link rel="icon" href="assets/img/icon.png">
+  <link rel="icon" href="assets/img/logo.svg">
+  <!-- My CSS -->
+  <link rel="stylesheet" href="assets/styles/global.css">
   <title>Alif the Devs</title>
 </head>
-<body style="text-align: center;">
-  <h1 style="font-size: 10vh;">Alif The Devs</h1>
-  <br>
-  <h3 style="font-size: 6vh;">Coming Soon</h3>
+
+<body>
+  <nav id="landing-nav" class="">
+    <div id="logo-nav">
+      <a href="#">
+        <img id="img-logo" src="./assets/img/logo.svg" alt="">
+      </a>
+    </div>
+    <div id="menu-nav" class="">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  <div id="sidebar-nav">
+    <ul id="links-nav">
+      <li><a href="#landing-header">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Skills</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Experiences</a></li>
+      <li><a href="">Testimonials</a></li>
+      <li><a href="">Contacts</a></li>
+      <li id="close-side-nav" style="border: none;">
+        <div href="" style="font-size: .8rem; font-weight: 400; text-align: center; margin-top: .6rem;"><i
+            class="fa-solid fa-circle-chevron-right"></i></div>
+      </li>
+    </ul>
+  </div>
+  <header id="landing-header">
+    <!-- Using Parallax scrolling content -->
+    <img src="./assets/img/mountains.svg" alt="" class="header-imgs" id="mountains">
+    <img src="./assets/img/rocket.svg" alt="" class="header-imgs" id="rocket">
+    <img src="./assets/img/moon.svg" alt="" class="header-imgs" id="moon">
+    <img src="./assets/img/asteroid.svg" alt="" class="header-imgs" id="asteroid">
+    <img src="./assets/img/me.png" alt="" class="header-imgs" id="my-img">
+    <div id="landing-text">
+      Syauqi Alif Ibrahim
+    </div>
+  </header>
+  <div style="height: 100vh;"></div>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bfcc361c81.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/menunav.js"></script>
 </body>
+
 </html>
