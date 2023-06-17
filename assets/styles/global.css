@@ -167,6 +167,10 @@ p {
   transition: all .5s ease-in-out;
 }
 
+#close-side-nav {
+  cursor: pointer;
+}
+
 /* #landing-img-mountain {
   position: relative;
   width: 100%;
